@@ -13,7 +13,7 @@
     <p>Only admins should see this!</p>
   </ng-template> -->
 
-  <p *appAuth="'admin'" class="protected-content admin">
+  <p *appAuth="'admin'" appLog class="protected-content admin">
     Only admins should see this!
   </p>
   <p *appAuth="'user'" class="protected-content unauthenticated">
